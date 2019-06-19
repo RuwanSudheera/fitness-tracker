@@ -4,14 +4,16 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatDialogModule} from '@angular/material/dialog';
 import {MatNativeDateModule,
   MatSidenavModule,
   MatToolbarModule,
   MatListModule,
   MatTabsModule,
   MatCardModule,
-  MatProgressSpinnerModule
-} from '@angular/material';
+  MatProgressSpinnerModule,
+  MatSortModule
+  } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -26,7 +28,10 @@ import {MatNativeDateModule,
     MatListModule,
     MatTabsModule,
     MatCardModule,
-    MatProgressSpinnerModule],
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatSortModule
+  ],
   exports: [
     MatButtonModule,
     MatIconModule,
@@ -39,6 +44,9 @@ import {MatNativeDateModule,
     MatListModule,
     MatTabsModule,
     MatCardModule,
-    MatProgressSpinnerModule]
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatSortModule
+  ]
 })
 export class MaterialModule{}
